@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Universitário-UFAL</title>
+    <link href="_css/style.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gastos - RU</h1>
+        </header> 
+        <section>
+
+            <div>
+                <h4><label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" value="estudante">
+                </h4>
+                <p><h4>Ocupação:</h4>
+                    <span class="mobile">
+                       <input type="radio" name="opcoes" id="grad" checked>
+                       <label for="grad">Graduação</label> 
+                    </span>
+                    
+                    <span class="mobile">
+                       <input type="radio" name="opcoes" id="pos">
+                       <label for="pos">Pós-Graduação</label> 
+                    </span>
+                    
+                    <span class="mobile">
+                       <input type="radio" name="opcoes" id="serv">
+                       <label for="serv">Servidor</label> 
+                    </span>
+                </p>
+
+                <h4>Digite a quantidade de fichas:</h4>
+                <p>Bolo:
+                    <input type="number" name="bolo" id="bolo" min="0" placeholder="0">
+                </p>
+                <p>Sopa:
+                    <input type="number" name="sopa" id="sopa" min="0" placeholder="0">
+                </p>
+                <p>Regional:
+                    <input type="number" name="reg" id="reg" min="0" placeholder="0">
+                </p>
+                <p>Almoço:
+                    <input type="number" name="alm" id="alm" min="0" placeholder="0">
+                </p>
+                <p>
+                    <input type="button" value="Calcular" onclick="verificar()">
+                </p>
+            </div>
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+            </div>
+        </section>
+    </div><!--container-->
+    
+    <footer>
+        <p>&copy; Desenvolvido por Leandro Araújo</p>
+    </footer>
+    <script src="_js/script.js"></script>
+</body>
+</html>
